@@ -8,7 +8,7 @@ import {
   resizeImageSchema, 
   rotateImageSchema,
   watermarkImageSchema 
-} from "@shared/schema";
+} from "/shared/schema";
 
 const upload = multer({
   storage: multer.memoryStorage(),
