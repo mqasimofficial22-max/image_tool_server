@@ -1,0 +1,75 @@
+💻 Detailed Website Content & Development Brief: [TechInfoPlanet]
+I. Technical and SEO Directives
+1. Site Structure & Technology
+•	Goal: Build a Single Page Application (SPA) structure for instant loading and tool switching.
+•	Technology Hint: Use a modern JavaScript framework (e.g., React, Vue, or the best option supported by the Replit environment) for component-based architecture.
+•	Styling: Implement a clean, minimalist, dark-mode-optional UI with a focus on accessibility (high contrast, keyboard navigation).
+•	Performance: Optimize code and asset loading (e.g., lazy-loading tool modules) for a PageSpeed Insights score > 90.
+2. Core SEO Strategy
+•	Target Keywords (High Priority): online image compressor, convert image to png, free image resizer, image tools online.
+•	Content Strategy: The homepage must link directly to dedicated, SEO-optimized landing pages (even if they are dynamically rendered components) for the top 5 tools listed below, using keyword-rich anchor text.
+•	Schema Markup: Implement WebSite and SoftwareApplication schema markup to enhance search visibility.
+________________________________________
+II. Homepage Content: The User Journey
+A. Header & Navigation (Fixed on Scroll)
+Element	Content/Functionality
+Logo	[Your Brand Name] (e.g., ImgFlow, PixelPerfect)
+Nav Links	Compress (CTA) | Convert | Resize | All Tools | Login/Sign Up (Future Feature)
+Utility	Theme Switcher (Light/Dark Mode)
+B. Hero Section: Immediate Value Proposition
+H1 (Primary SEO Headline): The Ultimate Free Image Toolkit: Compress, Convert, Edit & Enhance Instantly.
+H2 (Supporting Text): Stop compromising quality for speed. Optimize your JPEGs, PNGs, and WebP files for perfect performance and better SEO, all in one intuitive platform.
+Core Interaction Area (Must be Prominent):
+•	Large, Central Drop Zone: "Drag & Drop Images Here, or Click to Upload (Supports Batch Upload)"
+•	Quick Selector: A row of the 3 most popular tools underneath the drop zone:
+1.	Compress 📉
+2.	Convert to PNG 🔄
+3.	Resize 📐
+C. Featured Tools Section (Detailed Listing)
+This section drives traffic to the specific tool functionalities. Each tool must have a descriptive card/button.
+Tool Name	Action/Link Text	Description (Must be on Card)	SEO Focus
+Image Compressor	Start Compression	Lossless and intelligent lossy compression for JPG, PNG, and WebP. Reduce size by up to 80%.	compress jpeg, reduce image size
+Universal Image Converter	Go to Converter	Convert any format (HEIC, TIFF, GIF, BMP) to standardized web formats (JPG, PNG, WebP).	png to jpg, webp converter
+Image Resizer & Cropper	Resize Now	Set exact pixel dimensions, aspect ratios (16:9, 4:3), or resize by percentage. Perfect for social media.	free image resizer, crop photo online
+Background Remover	Remove BG (AI)	Instantly generate transparent backgrounds with powerful AI segmentation technology.	remove background from photo
+Image Rotator & Flipper	Rotate/Flip	Correct orientation, rotate 90°, 180°, or mirror images horizontally and vertically.	rotate image online
+Image Watermarker	Add Watermark	Protect your images by adding custom text or logo watermarks.	add watermark to photo
+Image Format Info	Check Info	View detailed metadata, color profile, and resolution information for any file.	image metadata checker
+D. Trust & Security Section
+Headline: Your Files are Secure. Your Results are Fast.
+•	Security Icon: End-to-End Encryption
+o	Text: All uploads and downloads are handled over secure $HTTPS$. Your data is protected from the moment you upload.
+•	Privacy Icon: Automatic Deletion
+o	Text: Files are processed instantly and automatically purged from our servers within 1 hour. We value your privacy.
+•	Performance Icon: Cloud-Powered Speed
+o	Text: Powered by efficient cloud infrastructure to deliver results in milliseconds, not minutes.
+E. How It Works (Simple 3-Step Guide)
+Headline: Optimize in Three Simple Steps
+1.	Upload: Drag and drop your image files into the tool area above.
+2.	Optimize: Select your desired tool (e.g., "Compress") and click the "Process" button.
+3.	Download: Instantly download the high-quality, optimized version of your image.
+________________________________________
+III. Detailed Tool Descriptions (For Dedicated Pages/Components)
+The AI should use this content to populate the specific tool pages when clicked from the homepage.
+1. 📉 Dedicated Image Compressor Page
+•	H1: Best Free Online Image Compressor (JPG, PNG, WebP)
+•	Description: Use our smart compression technology to dramatically reduce image loading times without visible quality degradation. Choose between Lossless (maximum quality) or Intelligent Lossy (maximum size reduction) modes. Optimized files lead to faster websites and higher conversion rates.1
+•	Input Options: Quality slider (0% to 100%), Format selector (JPG, PNG, WebP).
+•	Post-Processing Display: Show a clear comparison: "Original Size: 5.2 MB" $\rightarrow$ "New Size: 780 KB" (85% Reduction!)
+2. 🔄 Dedicated Image Converter Page
+•	H1: Image Converter Online: Convert PNG, JPG, WebP, GIF & More
+•	Description: The most flexible online image format tool. Easily switch between common and exotic file types. Need transparency? Convert to PNG. Need the smallest file size? Convert to JPG or WebP. Supports batch conversion for efficiency.
+•	Key Conversions to Feature: PNG to JPG, JPG to PNG, WebP to JPG, HEIC to JPG.
+•	Input Options: "Convert From:" (Dropdown) / "Convert To:" (Dropdown).
+3. 📐 Dedicated Image Resizer Page
+•	H1: Online Image Resizer & Aspect Ratio Tool
+•	Description: Accurately adjust the dimensions of your photos for email, web banners, or printing. You can resize by entering precise pixel values for width and height, or scale the image by a percentage (e.g., 50%). Maintain aspect ratio lock to prevent stretching or distortion.
+•	Input Options: Input fields for "New Width (px)", "New Height (px)", "Scale by (%)". Toggle for "Lock Aspect Ratio".
+________________________________________
+IV. Footer & Secondary Information
+•	Footer Links: Home | All Tools | About Us | Blog (Coming Soon) | Contact & Support | Privacy Policy | Terms of Service.
+•	Copyright: © [Current Year] [Your Brand Name]. Built with speed and simplicity in mind.
+•	Mini-FAQ (Under Footer):
+o	Q: Is this tool really free? A: Yes, all our core image utilities are 100% free to use.
+o	Q: How long do you keep my files? A: Uploaded files are deleted from our servers within 60 minutes after processing.
+
