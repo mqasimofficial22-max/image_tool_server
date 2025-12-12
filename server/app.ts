@@ -112,7 +112,8 @@ export default async function runApp(
   server.listen({
     port,
     // host: "beta.techinfoplanet.com",
-    host: "127.0.0.1",
+    // host: "127.0.0.1",
+    host: "0.0.0.0",
     // reusePort: true,
   }, () => {
     log(`serving on port ${port}`);
