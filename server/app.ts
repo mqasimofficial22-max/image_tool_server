@@ -6,7 +6,7 @@ import express, {
   Response,
   NextFunction,
 } from "express";
-
+import cors, { CorsOptions } from "cors"; // <-- ADD THIS IMPORT (after installing the package)
 import { registerRoutes } from "./routes";
 
 export function log(message: string, source = "express") {
@@ -21,6 +21,29 @@ export function log(message: string, source = "express") {
 }
 
 export const app = express();
+
+// Use the CorsOptions type for the options object
+const corsOptions: CorsOptions = {
+  // CRITICAL FIX: Explicitly type origin and callback
+  origin: (origin: string | undefined, callback: (err: Error | null, allow?: boolean) => void) => {
+    
+    const allowedOrigins = [
+      'https://beta.techinfoplanet.com', // Your live frontend URL
+      'http://localhost:5000', // Local development URL
+    ];
+    
+    // allow requests with no origin (like mobile apps or curl requests)
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'), false);
+    }
+  },
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  credentials: true,
+};
+
+app.use(cors(corsOptions)); // This line uses the 'cors' middleware
 
 declare module 'http' {
   interface IncomingMessage {
@@ -89,8 +112,7 @@ export default async function runApp(
   server.listen({
     port,
     // host: "beta.techinfoplanet.com",
-    //host: "127.0.0.1",
-    host: "0.0.0.0",
+    host: "127.0.0.1",
     // reusePort: true,
   }, () => {
     log(`serving on port ${port}`);
