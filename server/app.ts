@@ -28,7 +28,8 @@ const corsOptions: CorsOptions = {
   origin: (origin: string | undefined, callback: (err: Error | null, allow?: boolean) => void) => {
     
     const allowedOrigins = [
-      'https://beta.techinfoplanet.com', // Your live frontend URL
+      'https://beta.techinfoplanet.com', // beta live frontend URL
+      'https://techinfoplanet.com', // beta live frontend URL
       'http://localhost:5000', // Local development URL
     ];
     
